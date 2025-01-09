@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-    features = "./features/hotelapp.feature"
+    features = "./features/hotelapp.feature", glue = "com.example.stepdefinitions"
 )
 
 public class TestRun {

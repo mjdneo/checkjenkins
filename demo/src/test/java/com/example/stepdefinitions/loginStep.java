@@ -48,6 +48,7 @@ public class loginStep {
     @Then("Verify the redirected page is valid")
     public void verify_the_redirected_page_is_valid() {
         System.out.println(driver.getCurrentUrl());
+        driver.quit();
     }
 
 }
