@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: com.example.runner.TestRun
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.515 s <<< FAILURE! - in com.example.runner.TestRun
+userlogin(Login Feature)  Time elapsed: 0.114 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'Open the browser and navigate to hotel app' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("Open the browser and navigate to hotel app")
+public void open_the_browser_and_navigate_to_hotel_app() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user enters the valid username")
+public void user_enters_the_valid_username() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user enters the valid password")
+public void user_enters_the_valid_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Clicks on login button")
+public void clicks_on_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Verify the redirected page is valid")
+public void verify_the_redirected_page_is_valid() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
