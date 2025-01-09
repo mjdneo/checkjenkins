@@ -1,11 +1,11 @@
 Feature: Login Feature
 
-    Feature Description
+    Feature is to test the login functionality of my application
 
     Scenario: userlogin
 
-    Given Open the browser and navigate to hotel app
-    When user enters the valid username
-    And user enters the valid password
-    And Clicks on login button
-    Then Verify the redirected page is valid
+    Given the user is on the jiomart homepage
+    When the user clicks signin button it will navigate to signin page
+    And  user input the valid mobile number into the mobile number field
+    And  If Click on the continue button
+    Then user should get enter otp 
