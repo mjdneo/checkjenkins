@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.jiomart.runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 57.715 s - in com.jiomart.runner.TestRunner
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 58.985 s - in com.jiomart.runner.TestRunner
