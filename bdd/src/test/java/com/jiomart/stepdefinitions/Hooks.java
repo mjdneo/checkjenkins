@@ -13,13 +13,13 @@ public class Hooks {
 
     WebDriver driver;
 
-    @Before
+    @Before ()
     public void openBrowser() {
-
+        System.out.println("Opened *********************");
         try {
             driver = new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
             driver.manage().window().maximize();
-            driver.get("https://www.jiomart.com");
+            driver.get("https://www.amazon.in");
             Thread.sleep(3000);
         } catch (Exception e) {
             // TODO Auto-generated catch block
@@ -28,9 +28,11 @@ public class Hooks {
 
     }
 
-    @After
-    public void closeBrowser() {
+    @After ()
+    public void closeSession() {
         driver.quit();
+        System.out.println("Driver quit *********************");
     }
+
 
 }
