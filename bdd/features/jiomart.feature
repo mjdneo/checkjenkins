@@ -4,7 +4,7 @@ Feature: Jiomart Feature
     Given Open the Browser
 
 
-     @signin
+     @sigin
     Scenario: signin functionality
             Given User opened the Jiomart web application.
             When the user clicks on sign in, they are redirected to the sign-in module.
@@ -12,7 +12,7 @@ Feature: Jiomart Feature
             And the user clicks on the continue button.
             Then the user should be prompted to enter the valid OTP.
 
-    @advsearch 
+    @advsearch
     Scenario Outline: searchfunctionality
             Given User open the application
             When User click on the advance search icon, the search bar opens
@@ -24,4 +24,7 @@ Feature: Jiomart Feature
         |Bread|Jam|
         |1234||
         |$$$$$|0000|
+
+
+
         
