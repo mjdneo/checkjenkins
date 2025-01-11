@@ -8,7 +8,8 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-    features = "./features/login.feature" , glue = "com.jio.stepdefinitions", plugin = {"pretty", "html:demobdd/cucumber.html"}
+    features = "./features/login.feature" , glue = "com.jio.stepdefinitions",
+     plugin = {"pretty", "html:cucumber.html"}, monochrome = true,  dryRun = false 
 )
 
 

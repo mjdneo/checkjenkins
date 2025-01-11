@@ -25,6 +25,7 @@ public class LoginStepDefinitions {
         } catch (Exception e) {
             // TODO: handle exception
         }
+        System.out.println("Iam first");
 
     }
 
@@ -41,8 +42,13 @@ public class LoginStepDefinitions {
     @Then("User will be prompted to enter the valid otp")
     public void user_will_be_prompted_to_enter_the_valid_otp() {
         System.out.println(driver.getCurrentUrl());
-        driver.quit();
+        
     }
+
+    @Then("User will be prompted to enter the valid otpda")
+public void user_will_be_prompted_to_enter_the_valid_otpda() {
+    driver.quit();
+}
 
 
 //     @When("User clicks on {string} button")
@@ -64,5 +70,23 @@ public class LoginStepDefinitions {
 //     System.out.println("Done");
 //     driver.quit();
 // }
+
+
+@Given("User clicked on button in Homepage")
+public void user_clicked_on_button_in_homepage() {
+
+    try {
+        driver = new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
+        driver.get("https://www.jiomart.com");
+        Thread.sleep(4000);
+    } catch (Exception e) {
+        // TODO: handle exception
+    }
+    
+}
+@Given("Entered the num in phonefield")
+public void entered_the_num_in_phonefield() {
+    System.out.println("Hello Iam Second");
+}
 
 }
