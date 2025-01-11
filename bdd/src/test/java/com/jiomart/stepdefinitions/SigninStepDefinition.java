@@ -1,5 +1,6 @@
 package com.jiomart.stepdefinitions;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -32,23 +33,25 @@ public class SigninStepDefinition {
 
     @When("User click on the advance search icon, the search bar opens")
     public void user_click_on_the_advance_search_icon_the_search_bar_opens() {
-
+        driver.findElement(By.id("btn_search_list")).click();
+        
     }
 
     @When("User input two search values {string} and {string} inside search bar")
     public void user_input_two_search_values_and_inside_search_bar(String string, String string2) {
-
+        driver.findElement(By.id("rel_search_val")).sendKeys(string + "," + string2);
+        
     }
 
     @When("User clicks on searchAll button")
     public void user_clicks_on_search_all_button() {
-
+        driver.findElement(By.xpath("//button[@type='submit' and text()=' Search All ']")).click();
     }
 
     @Then("the search results page should display two search result products.")
     public void the_search_results_page_should_display_two_search_result_products() {
         System.out.println("Search Functionality Completed");
-        driver.quit();
+      //  driver.quit();
 
     }
 
@@ -59,7 +62,7 @@ public class SigninStepDefinition {
 
     @When("the user clicks on sign in, they are redirected to the sign-in module.")
     public void the_user_clicks_on_sign_in_they_are_redirected_to_the_sign_in_module() {
-            
+        
     }
 
     @When("the user input the valid {string} mobile number.")
