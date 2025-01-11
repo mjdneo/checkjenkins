@@ -1,14 +1,28 @@
 package com.jiomart.stepdefinitions;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.messages.types.Exception;
 
 public class SigninStepDefinition {
 
+    WebDriver driver;
+
     @Given("Open the Browser")
     public void open_the_browser() {
-        
+               try {
+            driver = new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
+            driver.get("https://www.jiomart.com");
+            driver.manage().window().maximize();
+            Thread.sleep(3000);
+        } catch (Exception e) {
+           
+        }
     }
 
     @Given("User open the application")
@@ -34,6 +48,8 @@ public class SigninStepDefinition {
     @Then("the search results page should display two search result products.")
     public void the_search_results_page_should_display_two_search_result_products() {
         System.out.println("Search Functionality Completed");
+        driver.quit();
+        
     }
 
     @Given("User opened the Jiomart web application.")
@@ -59,6 +75,7 @@ public class SigninStepDefinition {
     @Then("the user should be prompted to enter the valid OTP.")
     public void the_user_should_be_prompted_to_enter_the_valid_otp() {
         System.out.println("Sigin Functionality Completed");
+        driver.quit();
     }
 
 }

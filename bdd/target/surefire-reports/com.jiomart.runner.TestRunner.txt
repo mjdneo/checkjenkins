@@ -1,28 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.jiomart.runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.914 s <<< FAILURE! - in com.jiomart.runner.TestRunner
-sigin(Jiomart Feature)  Time elapsed: 0.194 s  <<< ERROR!
-io.cucumber.junit.UndefinedStepException: 
-The step 'Open the Browser' is undefined.
-You can implement this step using the snippet(s) below:
-
-@Given("Open the Browser")
-public void open_the_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-
-search(Jiomart Feature)  Time elapsed: 0.008 s  <<< ERROR!
-io.cucumber.junit.UndefinedStepException: 
-The step 'Open the Browser' is undefined.
-You can implement this step using the snippet(s) below:
-
-@Given("Open the Browser")
-public void open_the_browser() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.826 s - in com.jiomart.runner.TestRunner
