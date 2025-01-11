@@ -9,7 +9,7 @@ public class SigninStepDefinition {
     
     @Given("User opened the Jiomart web application.")
     public void user_opened_the_jiomart_web_application() {
-       System.out.println("Scenario1 Started");
+       System.out.println("Scenario 1 Started");
     }
 
 
@@ -31,14 +31,14 @@ public class SigninStepDefinition {
     @Then("the user should be prompted to enter the valid OTP.")
     public void the_user_should_be_prompted_to_enter_the_valid_otp() {
         System.out.println("verified");
-        System.out.println("Scenario1 Closed");
+        System.out.println("Scenario 1 Closed");
        
     }
 
 
     @Given("User open the application")
     public void user_open_the_application() {
-            System.out.println("Second2 started");
+            System.out.println("Scenario 2 started");
     }
 
     @When("User click on the advance search icon, the search bar opens")
@@ -59,7 +59,7 @@ public class SigninStepDefinition {
 
     @Then("the search results page should display two search result products.")
     public void the_search_results_page_should_display_two_search_result_products() {
-        System.out.println("Second feature scenario ended");
+        System.out.println("Scenario 2 ended");
     }
 
 }
