@@ -37,7 +37,7 @@ public class SigninStepDefinition {
 
     @Given("User open the application")
     public void user_open_the_application() {
-            System.out.println("Second feature scenario started");
+            System.out.println("Second2 started");
     }
 
     @When("User click on the advance search icon, the search bar opens")
