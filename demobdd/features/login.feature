@@ -2,7 +2,7 @@ Feature: Jiomart Login
 
     Scenario: login with valid mobile number
 
-    # Given User opened the browser and launched jiomart application
+    Given User opened the browser and launched jiomart application
 
     When User clicks on "Sigin" button
 
