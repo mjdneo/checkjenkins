@@ -1,4 +1,68 @@
 -------------------------------------------------------------------------------
 Test set: com.jiomart.runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.775 s - in com.jiomart.runner.TestRunner
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.616 s <<< FAILURE! - in com.jiomart.runner.TestRunner
+search(Jiomart Feature)  Time elapsed: 0.185 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'User open the application' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User open the application")
+public void user_open_the_application() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User click on the advance search icon, the search bar opens")
+public void user_click_on_the_advance_search_icon_the_search_bar_opens() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User input two search values {string} and {string} inside search bar")
+public void user_input_two_search_values_and_inside_search_bar(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks on searchAll button")
+public void user_clicks_on_search_all_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the search results page should display two search result products.")
+public void the_search_results_page_should_display_two_search_result_products() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+signin(Jiomart Feature)  Time elapsed: 0.01 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'User opened the Jiomart web application.' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User opened the Jiomart web application.")
+public void user_opened_the_jiomart_web_application() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user clicks on sign in, they are redirected to the sign-in module.")
+public void the_user_clicks_on_sign_in_they_are_redirected_to_the_sign_in_module() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user input the valid {string} mobile number.")
+public void the_user_input_the_valid_mobile_number(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user clicks on the continue button.")
+public void the_user_clicks_on_the_continue_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should be prompted to enter the valid OTP.")
+public void the_user_should_be_prompted_to_enter_the_valid_otp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
