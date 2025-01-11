@@ -1,6 +1,6 @@
 Feature: Jiomart Sigin Feature
 
-    @p1
+    @p2
     Scenario: check user signIn module
         Given User opened the Jiomart web application.
         When the user clicks on sign in, they are redirected to the sign-in module.
@@ -8,8 +8,8 @@ Feature: Jiomart Sigin Feature
         And the user clicks on the continue button.
         Then the user should be prompted to enter the valid OTP.
 
-     @p2
-            Scenario: check Multiple Search values
+    @p1
+    Scenario: check Multiple Search values
             Given User open the application
             When User click on the advance search icon, the search bar opens
             And User input two search values "Bread" and "Butter" inside search bar
