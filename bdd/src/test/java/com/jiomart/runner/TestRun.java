@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-    features = "./features/sigin.feature"
+    features = "./features/sigin.feature", glue = "/stepdefinitions/SigninStepDefinition.java"
 )
 
 public class TestRun {
