@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
     @CucumberOptions(features = "./features/sigin.feature", glue = "com.jiomart.stepdefinitions" ,
-    tags = "{"@advsearch"}, "@sigin"} 
+tags =   ("@advsearch or @sigin")  
     )
 public class TestRun {
 
