@@ -6,6 +6,7 @@ import io.cucumber.java.en.When;
 
 public class SigninStepDefinition {
 
+    
     @Given("User opened the Jiomart web application.")
     public void user_opened_the_jiomart_web_application() {
        System.out.println("Scenario1 Started");
