@@ -38,15 +38,16 @@ public class SigninStepDefinition {
         
     }
 
-    // @When("User input two search values {string} and {string} inside search bar")
-    // public void user_input_two_search_values_and_inside_search_bar(String string, String string2) {
-    //     
-        
-    // }
 
     @When("User input two search values <{string}> and <{string}> inside search bar")
 public void user_input_two_search_values_and_inside_search_bar(String string, String string2) {
     driver.findElement(By.id("rel_search_val")).sendKeys(string + "," + string2);
+}
+
+@When("User input two search values <Data1> and <Data2> inside search bar")
+public void user_input_two_search_values_data1_and_data2_inside_search_bar() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
 }
 
     @When("User clicks on searchAll button")

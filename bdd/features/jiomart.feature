@@ -10,19 +10,14 @@ Feature: Jiomart Feature
             And the user clicks on the continue button.
             Then the user should be prompted to enter the valid OTP.
 
-    @adv
-    Scenario: search
+    @advsearch
+    Scenario Outline: search
             Given User open the application
             When User click on the advance search icon, the search bar opens
-            And User input two search values <"Data1"> and <"Data2"> inside search bar
+            And User input two search values <Data1> and <Data2> inside search bar
             And User clicks on searchAll button
             Then the search results page should display two search result products. 
-
-
-            Scenario Outline: Search Dataset
             Examples:
                 | Data1 | Data2 |
-                | Bread  | ,Jam  | 
-                |   | ,Jam  | 
-                | 12323  |$$$$$| 
-             
+                | Bread  | Jam |
+                | 1234  | #### |
