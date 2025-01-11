@@ -1,8 +1,8 @@
 Feature: Jiomart Login
 
 
-
-    Scenario: ogin with valid mobile number
+    @first
+    Scenario: login with valid mobile number
 
     Given User opened the browser and launched jiomart application
 
@@ -13,9 +13,12 @@ Feature: Jiomart Login
     Then User will be prompted to enter the valid otp
     Then User will be prompted to enter the valid otpda
 
-
+    @second
     Scenario: Homepage search check
 
-    Given User clicked on button in Homepage
-
+    Given User clicked on button in <"Name"> Homepage <"Password">
+    |Name|Password|
+    |Check1|Check2|
+    |Check3|Check4|
+    |Check5|Check6|
     And Entered the num in phonefield
