@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.jiomart.runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 50.71 s <<< FAILURE! - in com.jiomart.runner.TestRunner
-sigin(Jiomart Feature)  Time elapsed: 0.292 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 57.715 s - in com.jiomart.runner.TestRunner

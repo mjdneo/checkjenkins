@@ -2,15 +2,17 @@ Feature: Jiomart Feature
 
     Background: Open Browser
     Given Open the Browser
-     @Regression
-    Scenario: sigin
+
+
+     @signin
+    Scenario: signin
             Given User opened the Jiomart web application.
             When the user clicks on sign in, they are redirected to the sign-in module.
             And the user input the valid "9988776655" mobile number.
             And the user clicks on the continue button.
             Then the user should be prompted to enter the valid OTP.
 
-    @Sanity 
+    @advsearch 
     Scenario Outline: search
             Given User open the application
             When User click on the advance search icon, the search bar opens

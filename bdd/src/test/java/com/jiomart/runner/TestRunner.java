@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(features = "./features/jiomart.feature", glue = "com.jiomart.stepdefinitions",
-tags = "@Sanity or @Regression"
+tags = "@signin or @advsearch"
 )
 
 public class TestRunner {

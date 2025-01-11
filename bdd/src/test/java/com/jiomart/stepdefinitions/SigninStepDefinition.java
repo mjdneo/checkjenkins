@@ -13,14 +13,9 @@ public class SigninStepDefinition {
 
     WebDriver driver;
 
-    // @Given("Open the Browser")
-    // public void open_the_browser() {
-        
-    // }
+    @Given("Open the Browser")
+    public void open_the_browser() {
 
-    @Given("User open the application")
-    public void user_open_the_application() {
-        System.out.println("Search Functionality Started");
         try {
             driver = new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
             driver.manage().window().maximize();
@@ -30,6 +25,13 @@ public class SigninStepDefinition {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+        
+    }
+
+    @Given("User open the application")
+    public void user_open_the_application() {
+        System.out.println("Search Functionality Started");
+     
     }
 
     @When("User click on the advance search icon, the search bar opens")
