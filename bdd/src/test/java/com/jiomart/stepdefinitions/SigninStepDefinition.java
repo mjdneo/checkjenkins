@@ -13,8 +13,14 @@ public class SigninStepDefinition {
 
     WebDriver driver;
 
-    @Given("Open the Browser")
-    public void open_the_browser() {
+    // @Given("Open the Browser")
+    // public void open_the_browser() {
+        
+    // }
+
+    @Given("User open the application")
+    public void user_open_the_application() {
+        System.out.println("Search Functionality Started");
         try {
             driver = new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
             driver.manage().window().maximize();
@@ -26,22 +32,22 @@ public class SigninStepDefinition {
         }
     }
 
-    @Given("User open the application")
-    public void user_open_the_application() {
-        System.out.println("Search Functionality Started");
-    }
-
     @When("User click on the advance search icon, the search bar opens")
     public void user_click_on_the_advance_search_icon_the_search_bar_opens() {
         driver.findElement(By.id("btn_search_list")).click();
         
     }
 
-    @When("User input two search values {string} and {string} inside search bar")
-    public void user_input_two_search_values_and_inside_search_bar(String string, String string2) {
-        driver.findElement(By.id("rel_search_val")).sendKeys(string + "," + string2);
+    // @When("User input two search values {string} and {string} inside search bar")
+    // public void user_input_two_search_values_and_inside_search_bar(String string, String string2) {
+    //     
         
-    }
+    // }
+
+    @When("User input two search values <{string}> and <{string}> inside search bar")
+public void user_input_two_search_values_and_inside_search_bar(String string, String string2) {
+    driver.findElement(By.id("rel_search_val")).sendKeys(string + "," + string2);
+}
 
     @When("User clicks on searchAll button")
     public void user_clicks_on_search_all_button() {
@@ -51,7 +57,7 @@ public class SigninStepDefinition {
     @Then("the search results page should display two search result products.")
     public void the_search_results_page_should_display_two_search_result_products() {
         System.out.println("Search Functionality Completed");
-      //  driver.quit();
+         driver.quit();
 
     }
 

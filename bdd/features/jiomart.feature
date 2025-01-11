@@ -1,7 +1,7 @@
 Feature: Jiomart Feature
 
     Background: Open Browser
-    Given Open the Browser
+    # Given Open the Browser
     
     Scenario: sigin
             Given User opened the Jiomart web application.
@@ -10,7 +10,7 @@ Feature: Jiomart Feature
             And the user clicks on the continue button.
             Then the user should be prompted to enter the valid OTP.
 
-
+    @adv
     Scenario: search
             Given User open the application
             When User click on the advance search icon, the search bar opens
@@ -24,6 +24,5 @@ Feature: Jiomart Feature
                 | Data1 | Data2 |
                 | Bread  | ,Jam  | 
                 |   | ,Jam  | 
-                | 12323  |$$$$$| 
                 | 12323  |$$$$$| 
              
