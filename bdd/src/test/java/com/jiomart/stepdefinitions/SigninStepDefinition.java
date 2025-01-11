@@ -3,11 +3,10 @@ package com.jiomart.stepdefinitions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
-
+import java.net.URL;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.messages.types.Exception;
 
 public class SigninStepDefinition {
 
@@ -15,13 +14,14 @@ public class SigninStepDefinition {
 
     @Given("Open the Browser")
     public void open_the_browser() {
-               try {
+        try {
             driver = new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
-            driver.get("https://www.jiomart.com");
             driver.manage().window().maximize();
+            driver.get("https://www.jiomart.com");
             Thread.sleep(3000);
         } catch (Exception e) {
-           
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
     }
 
@@ -49,7 +49,7 @@ public class SigninStepDefinition {
     public void the_search_results_page_should_display_two_search_result_products() {
         System.out.println("Search Functionality Completed");
         driver.quit();
-        
+
     }
 
     @Given("User opened the Jiomart web application.")
@@ -59,7 +59,7 @@ public class SigninStepDefinition {
 
     @When("the user clicks on sign in, they are redirected to the sign-in module.")
     public void the_user_clicks_on_sign_in_they_are_redirected_to_the_sign_in_module() {
-
+            
     }
 
     @When("the user input the valid {string} mobile number.")
