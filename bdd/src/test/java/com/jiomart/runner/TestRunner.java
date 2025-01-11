@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(features = "./features/jiomart.feature", glue = "com.jiomart.stepdefinitions",
-tags = "@advsearch"
+tags = "@advsearch" , dryRun = false
 )
 
 public class TestRunner {

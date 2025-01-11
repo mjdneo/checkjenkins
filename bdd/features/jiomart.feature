@@ -1,6 +1,6 @@
 Feature: Jiomart Feature
 
-    Background: Open Browser
+    # Background: Open Browser
     # Given Open the Browser
     
     Scenario: sigin
@@ -14,10 +14,12 @@ Feature: Jiomart Feature
     Scenario Outline: search
             Given User open the application
             When User click on the advance search icon, the search bar opens
-            And User input two search values <Data1> and <Data2> inside search bar
+            And User input two search values "<Value1>" and "<Value2>" inside search bar
             And User clicks on searchAll button
             Then the search results page should display two search result products. 
-            Examples:
-                | Data1 | Data2 |
-                | Bread  | Jam |
-                | 1234  | #### |
+        Examples:
+        |Value1|Value2|
+        |Bread|Jam|
+        |1234||
+        |$$$$$|0000|
+        
