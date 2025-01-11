@@ -1,8 +1,8 @@
 Feature: Jiomart Feature
 
-    # Background: Open Browser
-    # Given Open the Browser
-    
+    Background: Open Browser
+    Given Open the Browser
+     @Regression
     Scenario: sigin
             Given User opened the Jiomart web application.
             When the user clicks on sign in, they are redirected to the sign-in module.
@@ -10,7 +10,7 @@ Feature: Jiomart Feature
             And the user clicks on the continue button.
             Then the user should be prompted to enter the valid OTP.
 
-    @advsearch
+    @Sanity 
     Scenario Outline: search
             Given User open the application
             When User click on the advance search icon, the search bar opens
