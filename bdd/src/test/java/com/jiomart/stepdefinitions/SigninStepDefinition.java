@@ -40,7 +40,7 @@ public class SigninStepDefinition {
 
     @When("User input two search values {string} and {string} inside search bar")
 public void user_input_two_search_values_and_inside_search_bar(String string, String string2) {
-    driver.findElement(By.id("rel_search_val")).sendKeys(null);
+    driver.findElement(By.id("rel_search_val")).sendKeys(string + ", " + string2);
 }
 
 
@@ -50,8 +50,9 @@ public void user_input_two_search_values_and_inside_search_bar(String string, St
     }
 
     @Then("the search results page should display two search result products.")
-    public void the_search_results_page_should_display_two_search_result_products() {
+    public void the_search_results_page_should_display_two_search_result_products() throws InterruptedException {
         System.out.println("Search Functionality Completed");
+        Thread.sleep(4000);
          driver.quit();
 
     }
