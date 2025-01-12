@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @CucumberOptions(
     features = "./features/login.feature" , glue = "com.jio.stepdefinitions",
-     plugin = {"pretty", "html:cucumber.html"}, monochrome = true,  dryRun = false, tags = "@first or @second"
+     plugin = {"pretty", "html:cucumber.html"},  tags = "@first or @second", dryRun = false
 )
 
 
