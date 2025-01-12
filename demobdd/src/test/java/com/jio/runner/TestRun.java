@@ -9,8 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @CucumberOptions(
     features = "./features/login.feature" , glue = "com.jio.stepdefinitions",
-     plugin = {"pretty", "html:cucumber.html"},  tags = "@first or @second", dryRun = false
-)
+     plugin = {"pretty", "html:cucumber.html"},  tags = "@first or @second", dryRun = false)
 
 
 public class TestRun {
