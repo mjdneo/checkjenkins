@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.jiomart.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.111 s <<< FAILURE! - in com.jiomart.runner.TestRunner
+initializationError(com.jiomart.runner.TestRunner)  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid tag expression at 'com.jiomart.runner.TestRunner'
+Caused by: io.cucumber.tagexpressions.TagExpressionException: Tag expression "@sanity , @advsearch" could not be parsed because of syntax error: Expected operator.
+

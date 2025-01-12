@@ -1,4 +1,3 @@
 com/jiomart/runner/TestRunner.class
-com/jiomart/stepdefinitions/NavbarStepDefinitionxtends.class
 com/jiomart/stepdefinitions/SigninStepDefinition.class
-com/jiomart/stepdefinitions/Hooks.class
+com/jiomart/stepdefinitions/NavbarStepDefinitionxtends.class
