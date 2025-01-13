@@ -19,8 +19,8 @@ public class TestRWD {
     @Test (priority = 1)
     public void desktopView() throws MalformedURLException, InterruptedException{
         driver = new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
-        Dimension desktop = new Dimension(1440, 305);
-        driver.manage().window().setSize(desktop);
+        Dimension desktopview = new Dimension(1920, 1080);
+        driver.manage().window().setSize(desktopview);
         driver.get("https://ltimindtree.iamneo.ai/");
         Thread.sleep(4000);
         driver.quit();
