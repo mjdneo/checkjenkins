@@ -19,8 +19,8 @@ public class TestRWD {
     @Test (priority = 1)
     public void desktopView() throws MalformedURLException, InterruptedException{
         driver = new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
-        Dimension mobile = new Dimension(1920, 1080);
-        driver.manage().window().setSize(mobile);
+        Dimension desktop = new Dimension(1440, 305);
+        driver.manage().window().setSize(desktop);
         driver.get("https://ltimindtree.iamneo.ai/");
         Thread.sleep(4000);
         driver.quit();
@@ -29,8 +29,8 @@ public class TestRWD {
     @Test (priority = 2)
     public void tabView() throws MalformedURLException, InterruptedException{
         driver = new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
-        Dimension mobile = new Dimension(768, 1024);
-        driver.manage().window().setSize(mobile);
+        Dimension tab = new Dimension(820, 1180);
+        driver.manage().window().setSize(tab);
         driver.get("https://ltimindtree.iamneo.ai/");
         Thread.sleep(4000);
         driver.quit();
@@ -39,7 +39,7 @@ public class TestRWD {
     @Test (priority = 3)
     public void mobileView() throws MalformedURLException, InterruptedException{
         driver = new RemoteWebDriver(new URL("http://localhost:4444"), new ChromeOptions());
-        Dimension mobile = new Dimension(375, 667);
+        Dimension mobile = new Dimension(414, 896);
         driver.manage().window().setSize(mobile);
         driver.get("https://ltimindtree.iamneo.ai/");
         Thread.sleep(4000);
