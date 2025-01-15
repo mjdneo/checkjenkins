@@ -44,6 +44,7 @@ public class TestRWD {
         Dimension mobile = new Dimension(414, 896);
         driver.manage().window().setSize(mobile);
         driver.get("https://ltimindtree.iamneo.ai/");
+        System.out.println("mobile view");
         Thread.sleep(4000);
         driver.quit();
     }
