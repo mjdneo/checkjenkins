@@ -45,6 +45,7 @@ public class TestRWD {
         driver.manage().window().setSize(mobile);
         driver.get("https://ltimindtree.iamneo.ai/");
         System.out.println("mobile view");
+        System.out.println("Chumma oru sysout");
         Thread.sleep(4000);
         driver.quit();
     }
