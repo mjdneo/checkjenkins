@@ -23,6 +23,7 @@ public class TestRWD {
         driver.manage().window().setSize(desktopview);
         driver.get("https://ltimindtree.iamneo.ai/");
         Thread.sleep(4000);
+        System.out.println("Desktop view");
         driver.quit();
     }
 
@@ -32,6 +33,7 @@ public class TestRWD {
         Dimension tab = new Dimension(820, 1180);
         driver.manage().window().setSize(tab);
         driver.get("https://ltimindtree.iamneo.ai/");
+        System.out.println("Tab view");
         Thread.sleep(4000);
         driver.quit();
     }
